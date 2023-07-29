@@ -17,42 +17,11 @@ config_dir = os.path.join(os.getcwd(), "..", "config")
 if args.config_dir:
     config_dir = args.config_dir
 
-
-
-
 def determine_serial_interface():
-    print("Please disconnect USB-TTL used for DGUS Display...")
-    input("Press Enter to continue")
 
-
-    try:
-        serial_device_before_connect = listdir("/dev/serial/by-id")
-    except FileNotFoundError:
-        serial_device_before_connect = []
-
-    print("\nPlease connect USB-TTL of DGUS Display")
-    input("And press Enter to continue")
-
-    serial_device_after_connect = listdir("/dev/serial/by-id")
-
-
-
-    diff = list(set(serial_device_after_connect) - set(serial_device_before_connect))
-
-
-    if len(diff) == 1:
-        dev = diff[0]
-        print(f"\nFound serial interface for DGUS Display: {dev}")
-
-    else:
-        print("\nDetection failed! - Aborting")
-        exit(-1)
-
-
-    serial_device = f'/dev/serial/by-id/{dev}'
-
+    dev = "ttyS0"
+    serial_device = f'/dev/{dev}'
     return serial_device
-
 
 def setup_printer_ip():
     print("Is the Display connected to same machine were (MainsailOS) is running on?")
@@ -106,17 +75,12 @@ def update_websocket_config(ip):
     print("Updated websocket configuration...")
 
 
-
-
-
 print("DGUS for Klipper - Config generation\n\n")
 
-print("Step 1) Determine serial device for USB-TTL from Display:\n")
 serial_device = determine_serial_interface()
 
 print("\n\nStep 2) Setup Moonraker IP")
 printer_ip = setup_printer_ip()
-
 
 update_serial_config(serial_device)
 update_websocket_config(printer_ip)
