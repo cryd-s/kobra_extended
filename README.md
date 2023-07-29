@@ -19,6 +19,22 @@ Bill of Materials (BOM):
 - Cables
 
 ## connecting the Display with the raspberry pi
+
+The display is connected to the Raspberry Pi via the GPIO header.
+
+1. Enable the Serial Interface on Raspberry Pi
+
+1
+sudo raspi-config
+    * *3) Interface Options*
+    * *6) Serial Interface*
+
+    * Would you like a login shell to be accessible over the serial interface?
+         * No
+
+    * Would you like the serial interface hardware to be enabled?
+         * Yes
+
 schematic:
 | RaspberryPI PIN | Display |
 |-----------------|---------|
