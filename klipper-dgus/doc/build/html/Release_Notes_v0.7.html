@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/usage_index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Release Notes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Release_Notes_v0.7.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this heading"></a></h1>
+<p>The first functional release of the Klipper-dgus_CR6 project is v0.7.</p>
+<p>The screens and functionality approximate those of the Klipper-dgus_Vyper DGUS application, with the following minor changes:</p>
+<ol class="arabic simple">
+<li><p>The Z-Tilt function was removed, since that functionality is not available on the CR6.</p></li>
+<li><p>The slider controls were removed, since they did not operate correctly with touch on the 272x480 screen.</p></li>
+<li><p>Some control names were changed and some were rearranged, for aesthetic reasons.</p></li>
+</ol>
+<p>To install this application on a Creality CR6 printer:</p>
+<ol class="arabic simple">
+<li><p>You must already be using Klipper to operate your CR6 printer.  Instructions for converting your printer from the (Marlin-based) stock Creality or Community Firmware to Klipper are beyond the scope of this documentation.</p></li>
+<li><p>Follow the klipper-dgus installation instructions in the Installation section of this document, including the instructions for establishing a serial communications link between your Klipper Host MCU containing Moonraker and your DWIN display. (The use of a TTL-USB adaptor is recommended, for ease of installation, but the GPIO serial interface can also be used.)</p></li>
+<li><p>Download Klipper-dgus_CR6_DWIN_SET_v0.7.zip.</p></li>
+<li><p>Extract and copy the DWIN_SET folder to an empty SD card (FAT32, 4096 sectors)</p></li>
+<li><p>Flash the DWIN_SET to your CR6 DWIN display.</p></li>
+</ol>
+<p>6. With the printer off:
+Verify that the startup display appears on the screen, with an error message in the text box from Klipper saying that the printer mcu cannot be reached.
+7. With the printer on:
+Verify that the touchscreen operates the interface correctly:
+- tap the “FWrestart” button on the startup screen, to reboot Klipper and Moonraker
+- confirm that the Overview screen appears on the display
+- select “&lt;” to access the Main Menu screen
+- cycle through each of the screens</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>operate the controls on each screen</p></li>
+<li><p>verify that the data displayed on each screen is correct</p></li>
+<li><p>verify that the Emergency Stop (!) button works on every screen</p></li>
+</ul>
+</div></blockquote>
+<p>If you have any troubles with the system not working as described above, please consult the Troubleshooting section of this document for assistance.
+If you still have trouble, please review the Issues for similar-sounding problems.
+If there is no exising Issue that describes your problem, please open a new Issue and provide enough information for us to be able to understand and reproduce your problem.</p>
+<p>Good luck and enjoy!
+SPJones, 19Nov2022</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

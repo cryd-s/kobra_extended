@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing the Klipper-DGUS Python Display Control Application &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Klipper-DGUS Config Files" href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html" />
+    <link rel="prev" title="Display Flashing" href="display_flashing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="installation_index.html">Installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="display_connection.html">Display Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_flashing.html">Display Flashing</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Installing the Klipper-DGUS Python Display Control Application</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-the-automatic-installation-script">Using the Automatic Installation Script</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manual-installation">Manual Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html">Klipper-DGUS Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DWIN_SET_config_files/DWIN_SET_config_files_index.html">DWIN_SET Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/tutorials_index.html">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="installation_index.html">Installation</a></li>
+      <li class="breadcrumb-item active">Installing the Klipper-DGUS Python Display Control Application</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/installation/install_display_control_application.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installing-the-klipper-dgus-python-display-control-application">
+<span id="puthon-app-installation-instructions-label"></span><h1>Installing the Klipper-DGUS Python Display Control Application<a class="headerlink" href="#installing-the-klipper-dgus-python-display-control-application" title="Permalink to this heading"></a></h1>
+<section id="using-the-automatic-installation-script">
+<h2>Using the Automatic Installation Script<a class="headerlink" href="#using-the-automatic-installation-script" title="Permalink to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The automated script may terminate before completing the installation, if it encounters problems. If the Display is stuck on an unresponsive Overview screen at the end of this installation, try performing the Manual Installation.</p>
+</div>
+<p>For easy installation on <a class="reference external" href="https://docs.mainsail.xyz/setup/mainsail-os">MainsailOS</a>
+a setup script named <em>install_for_mainsailos.sh</em> can be found in root of the project
+folder.</p>
+<p>The script is consists of two major parts:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#easy-install-script-installation"><span class="std std-ref">installation</span></a></p></li>
+<li><p><a class="reference internal" href="#easy-install-script-installation"><span class="std std-ref">configuration</span></a></p></li>
+</ul>
+<p>On the configuration you will be asked to perform some actions.</p>
+<p>Get the project sources to your machine either by copying them per scp or just run</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/seho85/klipper-dgus.git
+</pre></div>
+</div>
+<p>change into the directory</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> klipper-dgus
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Sometimes, the serial port may not be detected properly by this script.
+If that happens, try removing all other USB devices connected to the Klipper Hostmachine, before setup.</p>
+<p>On the <em>Please disconnect USB-TTL used for DGUS Display…</em> just press enter.</p>
+<p>Connect the USB-TTL and continue with normal setup</p>
+</div>
+<p>And run the install script:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./install_for_mainsailos.sh
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>And after installation tweak <a class="reference internal" href="../Klipper-DGUS_config_files/dgus_display_macros_cfg.html#dgus-display-macros-cfg"><span class="std std-ref">dgus_display_macros.cfg</span></a> and include
+it to your <em>printer.cfg</em></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>During the installation, you will be prompted to enter your sudo password.</p>
+</div>
+<section id="installation">
+<span id="easy-install-script-installation"></span><h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1">#####################################</span>
+DGUS <span class="k">for</span> Klipper <span class="o">(</span>MainsailOS Install<span class="o">)</span>
+<span class="c1">#####################################</span>
+Checking <span class="k">if</span> python3-venv is installed...
+python3-venv is already installed
+
+Creating Python Virtual Environment
+Created Python Virtual Environment
+
+Activating Python Virtual Environment
+
+Installing python dependencies
+Looking <span class="k">in</span> indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting <span class="nv">astroid</span><span class="o">==</span><span class="m">2</span>.11.5 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">1</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/94/58/6f1bbfd88b6ba5271b4a9be99cb15cb2fe369794ba410390f0d672c6ad39/astroid-2.11.5-py3-none-any.whl
+Collecting <span class="nv">attrs</span><span class="o">==</span><span class="m">21</span>.4.0 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">2</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting <span class="nv">dill</span><span class="o">==</span><span class="m">0</span>.3.5.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">3</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/12/ff/3b1a8f5d59600393506c64fa14d13afdfe6fe79ed65a18d64026fe9f8356/dill-0.3.5.1-py2.py3-none-any.whl
+Collecting <span class="nv">isort</span><span class="o">==</span><span class="m">5</span>.10.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">4</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/b8/5b/f18e227df38b94b4ee30d2502fd531bebac23946a2497e5595067a561274/isort-5.10.1-py3-none-any.whl
+Collecting <span class="nv">jsonmerge</span><span class="o">==</span><span class="m">1</span>.8.0 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">5</span><span class="o">))</span>
+Using cached https://www.piwheels.org/simple/jsonmerge/jsonmerge-1.8.0-py3-none-any.whl
+Collecting <span class="nv">jsonschema</span><span class="o">==</span><span class="m">4</span>.5.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">6</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/de/ad/850070f0d9e6a9278cc44013c60c467558791cbc2e462925ba4559dec914/jsonschema-4.5.1-py3-none-any.whl
+Collecting lazy-object-proxy<span class="o">==</span><span class="m">1</span>.7.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">7</span><span class="o">))</span>
+Using cached https://www.piwheels.org/simple/lazy-object-proxy/lazy_object_proxy-1.7.1-cp37-cp37m-linux_armv7l.whl
+Processing ./wheels/libdgus-0.0.9-py3-none-any.whl
+Collecting <span class="nv">mccabe</span><span class="o">==</span><span class="m">0</span>.7.0 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">9</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/27/1a/1f68f9ba0c207934b35b86a8ca3aad8395a3d6dd7921c0686e23853ff5a9/mccabe-0.7.0-py2.py3-none-any.whl
+Collecting <span class="nv">platformdirs</span><span class="o">==</span><span class="m">2</span>.5.2 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">10</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/ed/22/967181c94c3a4063fe64e15331b4cb366bdd7dfbf46fcb8ad89650026fec/platformdirs-2.5.2-py3-none-any.whl
+Collecting <span class="nv">pylint</span><span class="o">==</span><span class="m">2</span>.13.9 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">11</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/03/09/7b710f4aab53e3ccc0d9596557bf020c5ad06312e54ec1b60402ec9d694f/pylint-2.13.9-py3-none-any.whl
+Collecting <span class="nv">pyrsistent</span><span class="o">==</span><span class="m">0</span>.18.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">12</span><span class="o">))</span>
+Using cached https://www.piwheels.org/simple/pyrsistent/pyrsistent-0.18.1-cp37-cp37m-linux_armv7l.whl
+Collecting <span class="nv">pyserial</span><span class="o">==</span><span class="m">3</span>.5 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">13</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl
+Collecting <span class="nv">tomli</span><span class="o">==</span><span class="m">2</span>.0.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">14</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+Collecting websocket-client<span class="o">==</span><span class="m">1</span>.3.2 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">15</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/a1/9e/8ddb04ef21ea3dfe3924b884dc11fa785df662af23e049ec2d62eaba707d/websocket_client-1.3.2-py3-none-any.whl
+Collecting <span class="nv">wrapt</span><span class="o">==</span><span class="m">1</span>.14.1 <span class="o">(</span>from -r requirements.txt <span class="o">(</span>line <span class="m">16</span><span class="o">))</span>
+Using cached https://www.piwheels.org/simple/wrapt/wrapt-1.14.1-cp37-cp37m-linux_armv7l.whl
+Collecting typing-extensions&gt;<span class="o">=</span><span class="m">3</span>.10<span class="p">;</span> python_version &lt; <span class="s2">&quot;3.10&quot;</span> <span class="o">(</span>from <span class="nv">astroid</span><span class="o">==</span><span class="m">2</span>.11.5-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">1</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl
+Requirement already satisfied: setuptools&gt;<span class="o">=</span><span class="m">20</span>.0 <span class="k">in</span> ./venv/lib/python3.7/site-packages <span class="o">(</span>from <span class="nv">astroid</span><span class="o">==</span><span class="m">2</span>.11.5-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">1</span><span class="o">))</span> <span class="o">(</span><span class="m">40</span>.8.0<span class="o">)</span>
+Collecting typed-ast&lt;<span class="m">2</span>.0,&gt;<span class="o">=</span><span class="m">1</span>.4.0<span class="p">;</span> <span class="nv">implementation_name</span> <span class="o">==</span> <span class="s2">&quot;cpython&quot;</span> and python_version &lt; <span class="s2">&quot;3.8&quot;</span> <span class="o">(</span>from <span class="nv">astroid</span><span class="o">==</span><span class="m">2</span>.11.5-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">1</span><span class="o">))</span>
+Using cached https://www.piwheels.org/simple/typed-ast/typed_ast-1.5.4-cp37-cp37m-linux_armv7l.whl
+Collecting importlib-metadata<span class="p">;</span> python_version &lt; <span class="s2">&quot;3.8&quot;</span> <span class="o">(</span>from <span class="nv">jsonschema</span><span class="o">==</span><span class="m">4</span>.5.1-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">6</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/d2/a2/8c239dc898138f208dd14b441b196e7b3032b94d3137d9d8453e186967fc/importlib_metadata-4.12.0-py3-none-any.whl
+Collecting importlib-resources&gt;<span class="o">=</span><span class="m">1</span>.4.0<span class="p">;</span> python_version &lt; <span class="s2">&quot;3.9&quot;</span> <span class="o">(</span>from <span class="nv">jsonschema</span><span class="o">==</span><span class="m">4</span>.5.1-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">6</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/3c/a7/4e4a2176fed10ab233cc39b083ba4ec222ba52de2be606e3e2b5195264e9/importlib_resources-5.8.0-py3-none-any.whl
+Collecting zipp&gt;<span class="o">=</span><span class="m">0</span>.5 <span class="o">(</span>from importlib-metadata<span class="p">;</span> python_version &lt; <span class="s2">&quot;3.8&quot;</span>-&gt;jsonschema<span class="o">==</span><span class="m">4</span>.5.1-&gt;-r requirements.txt <span class="o">(</span>line <span class="m">6</span><span class="o">))</span>
+Using cached https://files.pythonhosted.org/packages/f0/36/639d6742bcc3ffdce8b85c31d79fcfae7bb04b95f0e5c4c6f8b206a038cc/zipp-3.8.1-py3-none-any.whl
+Installing collected packages: typing-extensions, wrapt, lazy-object-proxy, typed-ast, astroid, attrs, dill, isort, zipp, importlib-metadata, pyrsistent, importlib-resources, jsonschema, jsonmerge, libdgus, mccabe, platformdirs, tomli, pylint, pyserial, websocket-client
+Successfully installed astroid-2.11.5 attrs-21.4.0 dill-0.3.5.1 importlib-metadata-4.12.0 importlib-resources-5.8.0 isort-5.10.1 jsonmerge-1.8.0 jsonschema-4.5.1 lazy-object-proxy-1.7.1 libdgus-0.0.9 mccabe-0.7.0 platformdirs-2.5.2 pylint-2.13.9 pyrsistent-0.18.1 pyserial-3.5 tomli-2.0.1 typed-ast-1.5.4 typing-extensions-4.3.0 websocket-client-1.3.2 wrapt-1.14.1 zipp-3.8.1
+
+Copying config to klipper_config
+
+Creating systemd service <span class="o">(</span>autostart<span class="o">)</span>
+
+Installing DGUS <span class="k">for</span> Klipper Service
+<span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for</span> pi:
+
+Reloading systemd services...
+
+Enabling dgus_klipper.service
+
+Starting initial configuration
+</pre></div>
+</div>
+</section>
+<section id="configuration">
+<span id="easy-install-script-configuration"></span><h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>DGUS <span class="k">for</span> Klipper - Config generation
+
+
+Step <span class="m">1</span><span class="o">)</span> Determine serial device <span class="k">for</span> USB-TTL from Display:
+
+Please disconnect USB-TTL used <span class="k">for</span> DGUS Display...
+Press Enter to <span class="k">continue</span>
+
+Please connect USB-TTL of DGUS Display
+And press Enter to <span class="k">continue</span>
+
+Found serial interface <span class="k">for</span> DGUS Display: usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0
+
+
+Step <span class="m">2</span><span class="o">)</span> Setup Moonraker IP
+Is the Display connected to same machine were <span class="o">(</span>MainsailOS<span class="o">)</span> is running on?
+<span class="o">(</span>y/n<span class="o">)</span>:y
+
+Using IP: <span class="m">127</span>.0.0.1
+Updated serial configuration...
+Updated websocket configuration...
+
+Display should be available <span class="k">in</span> arround <span class="m">15</span> seconds
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>During testing it happend that the display application was not automatically
+started after installation.</p>
+<p>If this happens on your installation please reboot the system.</p>
+</div>
+</section>
+</section>
+<section id="manual-installation">
+<h2>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Copy the <em>dgus-klipper</em> folder to your machine or directly clone it to the machine</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/seho85/klipper-dgus.git
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>SSH into the machine were you liked to run the display control application.</p></li>
+<li><dl>
+<dt>install python-venv package</dt><dd><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">venv</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Switch into the copied (cloned) <em>dgus-klipper</em> folder</p>
+<ol class="arabic">
+<li><p>Create a python virtual environment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Source the virtual enviroment</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="o">./</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install all needed dependencies</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+<li><p>Tweak <a class="reference internal" href="../Klipper-DGUS_config_files/serial_config_json.html#serial-config-json"><span class="std std-ref">serial_config.json</span></a></p></li>
+<li><p>Tweak <a class="reference internal" href="../Klipper-DGUS_config_files/websocket_json.html#websocket-json"><span class="std std-ref">websocket.json</span></a></p></li>
+<li><p>Tweak <a class="reference internal" href="../Klipper-DGUS_config_files/dgus_display_macros_cfg.html#dgus-display-macros-cfg"><span class="std std-ref">dgus_display_macros.cfg</span></a></p></li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="display_flashing.html" class="btn btn-neutral float-left" title="Display Flashing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html" class="btn btn-neutral float-right" title="Klipper-DGUS Config Files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

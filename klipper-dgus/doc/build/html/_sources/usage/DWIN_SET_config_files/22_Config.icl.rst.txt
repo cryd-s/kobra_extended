@@ -1,0 +1,14 @@
+.. _22_Config.icl:
+
+**************
+22_Config.icl
+**************
+
+The file 22_Config.icl is created with the ICL tool on the DGUSTool Tools Menu.
+.. figure:: ../../tool-cfg_menu.jpg
+
+This file contains any values that are configured as "boot data" in the DGUSTool project file.
+.. figure:: ../../boot_data.jpg
+
+
+T5LCFG_272480K is coded to load 22_Config.icl when the display powers-up.

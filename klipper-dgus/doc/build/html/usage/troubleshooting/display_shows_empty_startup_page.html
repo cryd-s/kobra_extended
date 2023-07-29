@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display show empty Startup Page &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Development" href="../../development/development_index.html" />
+    <link rel="prev" title="LED On / Off Button not working" href="led_on_off_notworking.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/installation_index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../config_files/config_files_index.html">Config Files</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="troubleshooting_index.html">Troubleshooting</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="led_on_off_notworking.html">LED On / Off Button not working</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Display show empty Startup Page</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#check-moonraker-connection">Check Moonraker Connection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#check-if-you-used-correct-serial-interface">Check if you used correct serial interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#serial-interface-not-connected-properly">Serial interface not connected properly</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="troubleshooting_index.html">Troubleshooting</a></li>
+      <li class="breadcrumb-item active">Display show empty Startup Page</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/troubleshooting/display_shows_empty_startup_page.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="display-show-empty-startup-page">
+<h1>Display show empty Startup Page<a class="headerlink" href="#display-show-empty-startup-page" title="Permalink to this heading"></a></h1>
+<p>If display just shows startup mask, without any other contents</p>
+<a class="reference internal image-reference" href="../../_images/Display_Empty_Startup_Page.jpg"><img alt="../../_images/Display_Empty_Startup_Page.jpg" src="../../_images/Display_Empty_Startup_Page.jpg" style="width: 50%;" /></a>
+<p>this could be caused through different problems:</p>
+<ul class="simple">
+<li><p>Moonraker is not reachable (misconfigured printer ip)</p></li>
+<li><p>Serial Interface not connected properly (rx tx toggle)</p></li>
+<li><p>Wrong serial interface choosen.</p></li>
+</ul>
+<p>Please read the following section and follow the instructions to get an idea what the actual problem is.</p>
+<section id="check-moonraker-connection">
+<h2>Check Moonraker Connection<a class="headerlink" href="#check-moonraker-connection" title="Permalink to this heading"></a></h2>
+<p>You can see if the connection to Moonraker was established successfully in the default logging outputs
+of the <em>klipper_dgus</em> systemd service.</p>
+<ol class="arabic">
+<li><p>Restart <em>klipper_dgus</em> service</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>systemctl restart klipper_dgus
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Wait arround 20 seconds</p></li>
+<li><p>To print out the logs of <em>klipper_dgus</em> service use the following command:</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>journalctl -u klipper_dgus
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can scroll up and down through the messages using the Up/Down Arrow on your keyboard.</p>
+<p>Leave the view by pressing <em>q</em></p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>You should see a message like this:</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>...
+Oct <span class="m">05</span> <span class="m">21</span>:04:04 mainsailos python3<span class="o">[</span><span class="m">20714</span><span class="o">]</span>: <span class="m">2022</span>-10-05 <span class="m">09</span>:04:04 : INFO  : moonraker.websocket_interface : ws_on_open : Connection to Moonraker websocket established..
+...
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>For the most configurations setting the <em>ip</em> parameter should be set to 127.0.0.1 in <a class="reference internal" href="../config_files/websocket_json.html#websocket-json"><span class="std std-ref">websocket.json</span></a>
+Set this parameter only to the ip-address of the klipper hostmachine (Raspberry PI) if you haven’t connected directly to klipper hostmachine.</p>
+</div>
+</section>
+<section id="check-if-you-used-correct-serial-interface">
+<h2>Check if you used correct serial interface<a class="headerlink" href="#check-if-you-used-correct-serial-interface" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Disconnect the USB-TTL from the USB port.</p></li>
+<li><p>show all serial interfaces</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls -la /dev/serial/by-id
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls -la /dev/serial/by-path
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls -la /dev/ttyU*
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Connect the USB-TTL</p></li>
+<li><p>repeat command to list existing serial interfaces</p></li>
+<li><p>a new entry should have been shown.</p></li>
+<li><p>If not execute</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>dmesg
+</pre></div>
+</div>
+<p>and check kernel output messages when you connected the USB TTL the should be in the last few printed lines.</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="serial-interface-not-connected-properly">
+<h2>Serial interface not connected properly<a class="headerlink" href="#serial-interface-not-connected-properly" title="Permalink to this heading"></a></h2>
+<p>It could be that RX and TX must be switched. Unfortunately there a some USB-TTL where the RX/TX prins are labled correctly.</p>
+<p>You can use following procedure to check if your RX/TX lines need be switched:</p>
+<ol class="arabic">
+<li><p>Enable logging for the serial data exchange.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>open <em>logging.json</em> file (can be found in <em>dgus_display</em> folder using the web-ui)</p></li>
+<li><p>locate the following section</p></li>
+</ul>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;dgus.display.communication.communication_interface&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;handlers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;console1&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;propagate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WARN&quot;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>set <em>“level”</em> to <em>“INFO”</em></p></li>
+</ul>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;dgus.display.communication.communication_interface&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;handlers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;console1&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;propagate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INFO&quot;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>save the file</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>restart <em>klipper_dgus</em> service</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>systemctl restart klipper_dgus
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>view the log outputs</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>journalctl -u klipper_dgus
+</pre></div>
+</div>
+<p>When you could find entries in the log that contain <em>“Received response for…”</em> the your serial connected interface correct.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Oct <span class="m">05</span> <span class="m">21</span>:14:19 mainsailos python3<span class="o">[</span><span class="m">21068</span><span class="o">]</span>: <span class="m">2022</span>-10-05 <span class="m">09</span>:14:19 : INFO  : dgus.display.communication.communication_interface : _do_serial_communication : Sending Request <span class="s1">&#39;DataVariable - Write Data - Address: 0x2030&#39;</span>
+Oct <span class="m">05</span> <span class="m">21</span>:14:19 mainsailos python3<span class="o">[</span><span class="m">21068</span><span class="o">]</span>: <span class="m">2022</span>-10-05 <span class="m">09</span>:14:19 : INFO  : dgus.display.communication.communication_interface : _do_serial_communication : Received response <span class="k">for</span> <span class="s1">&#39;DataVariable - Write Data - Address: 0x2030&#39;</span>
+</pre></div>
+</div>
+<p>If you you just see <em>“Sending Request ..”</em> the you have to switch RX and TX pin. Then check the logs again.</p>
+</div></blockquote>
+</li>
+<li><p>Repeat step 1 but disable logging by setting by setting <em>level</em> back to <em>WARN</em></p></li>
+<li><p>restart <em>klipper_dgus</em> service</p>
+<blockquote>
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>systemctl restart klipper_dgus
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="led_on_off_notworking.html" class="btn btn-neutral float-left" title="LED On / Off Button not working" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../development/development_index.html" class="btn btn-neutral float-right" title="Development" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

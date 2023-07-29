@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuning Mask &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="FAN / LED Mask" href="fan_mask.html" />
+    <link rel="prev" title="Extruder Mask" href="extruder_mask.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../general_usage_index.html">General</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../display_masks.html">Display Masks</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="overview_mask.html">Overview Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="homing_mask.html">Homing Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="extruder_mask.html">Extruder Mask</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Tuning Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fan_mask.html">FAN / LED Mask</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../backlight.html">Backlight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html">Klipper-DGUS Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../DWIN_SET_config_files/DWIN_SET_config_files_index.html">DWIN_SET Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/tutorials_index.html">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="../general_usage_index.html">General</a></li>
+          <li class="breadcrumb-item"><a href="../display_masks.html">Display Masks</a></li>
+      <li class="breadcrumb-item active">Tuning Mask</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/usage/general_usage/display_masks/tuning_mask.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tuning-mask">
+<h1>Tuning Mask<a class="headerlink" href="#tuning-mask" title="Permalink to this heading"></a></h1>
+<section id="display-elements">
+<h2>Display Elements<a class="headerlink" href="#display-elements" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Z-Offset</p></li>
+<li><p>Print Speed Multiplier</p></li>
+<li><p>Extrusion Factor</p></li>
+</ul>
+</section>
+<section id="controls">
+<h2>Controls<a class="headerlink" href="#controls" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Increase Z-Offset</p></li>
+<li><p>Lower Z-Offset</p></li>
+<li><p>Z-Offset Distance (Radio Button)</p></li>
+<li><p>Increase / Decrease Speed Factor</p></li>
+<li><p>Speed Factor Setpoint</p></li>
+<li><p>Increase / Decreate Extrusion Factor</p></li>
+<li><p>Extrusion Factor Setpoint</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="extruder_mask.html" class="btn btn-neutral float-left" title="Extruder Mask" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fan_mask.html" class="btn btn-neutral float-right" title="FAN / LED Mask" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

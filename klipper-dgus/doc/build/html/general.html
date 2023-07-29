@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>General &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/usage_index.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">General</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/general.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="general">
+<h1>General<a class="headerlink" href="#general" title="Permalink to this heading"></a></h1>
+<p>This project modifies and extends the klipper-dgus solution published and maintained by Sebastian Holzgreve at <a class="reference external" href="https://github.com/seho85/klipper-dgus">https://github.com/seho85/klipper-dgus</a>.</p>
+<dl class="simple">
+<dt>Sebastian’s klipper-dgus project provides users of the <a class="reference external" href="https://www.anycubic.com/products/anycubic-vyper">Anycubic Vyper 3D printer</a> with:</dt><dd><ol class="arabic simple">
+<li><dl class="simple">
+<dt>A python application that enables a DGUS Display application to interact with <a class="reference external" href="https://www.klipper3d.org/">Klipper3D</a>, through two serial interfaces:</dt><dd><ol class="loweralpha simple">
+<li><p>a python-dgus serial communications interface, exploiting <a class="reference external" href="https://github.com/seho85/python-dgus">his python-dgus library</a>, and</p></li>
+<li><p>a python-moonraker serial communications interface, exploiting <a class="reference external" href="https://moonraker.readthedocs.io/en/latest/web_api/">the Moonraker API</a></p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>A DGUS application developed with the DGUSTool 8.2.1.14 to work with the <em>DMG80480C043_02WTRZ07</em> from DWIN, which is the stock Vyper TFT display.</p></li>
+<li><p>Documentation designed to help users with Installation, Development and Troubleshooting of klipper-dgus.</p></li>
+</ol>
+</dd>
+</dl>
+<p>This project provides an alternative DGUS application, paired with the same two klipper-dgus serial communication interfaces and the same python-dgus library as the Vyper project.
+The DGUS application in this project works with the 272x480 pixel DWIN display provided stock with the Creality CR6-SE and CR6-MAX printers.</p>
+<dl class="simple">
+<dt>The initial set of screens bundled with this project were rescaled from the klipper-dgus Vyper DGUS application and modified, to:</dt><dd><ul class="simple">
+<li><p>remove the Z-Tilt function, which is not available on the CR6</p></li>
+<li><p>remove slider controls, which did not operate satisfactorily</p></li>
+<li><p>rearrange some controls and data displays, for aesthetic reasons</p></li>
+</ul>
+</dd>
+</dl>
+<p>This project documentation is an adaptation and extension of the documentation provided with klipper-dgus, tailored to document this Klipper-dgus_CR6 project.</p>
+<p>The latest release of klipper-dgus_CR6 DWIN_SET can be downloaded from <a class="reference external" href="https://github.com/Thinkersbluff/Klipper-dgus_CR6/releases">here</a>
+Prior releases are also available, there, each with the matching version of this evolving documentation.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This project is still under development.
+It may not all work as expected or described.</p>
+<p>Please feel to create an Issue on the project GitHub &lt;<a class="reference external" href="https://github.com/Thinkersbluff/Klipper-dgus_CR6">https://github.com/Thinkersbluff/Klipper-dgus_CR6</a>&gt;, if you encounter problems.</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Flashing &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Install Display Control Application" href="install_display_control_application.html" />
+    <link rel="prev" title="Display Connection" href="display_connection.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="installation_index.html">Installation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="display_connection.html">Display Connection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Display Flashing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#flashing-dwin-set-to-the-dwin-display-hardware">Flashing DWIN_SET to the DWIN Display Hardware</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="install_display_control_application.html">Install Display Control Application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html">Klipper-DGUS Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DWIN_SET_config_files/DWIN_SET_config_files_index.html">DWIN_SET Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/tutorials_index.html">Tutorials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="installation_index.html">Installation</a></li>
+      <li class="breadcrumb-item active">Display Flashing</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/installation/display_flashing.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="display-flashing">
+<h1>Display Flashing<a class="headerlink" href="#display-flashing" title="Permalink to this heading"></a></h1>
+<section id="flashing-dwin-set-to-the-dwin-display-hardware">
+<span id="flash-dwin-set-label"></span><h2>Flashing DWIN_SET to the DWIN Display Hardware<a class="headerlink" href="#flashing-dwin-set-to-the-dwin-display-hardware" title="Permalink to this heading"></a></h2>
+<p>A ready-to-flash display application (<em>DWIN_SET</em> folder) can be found in <em>dgus_project</em> folder.</p>
+<section id="prepare-microsd-card">
+<h3>Prepare MicroSD Card<a class="headerlink" href="#prepare-microsd-card" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Copy the <em>DWIN_SET</em> folder (generated by the DGUS Tool) on a properly formatted MicroSD card.</p></li>
+<li><p>Insert MicroSD card to the <strong>powered off</strong> Display</p></li>
+<li><p>Power on Display</p></li>
+<li><p>A blue display masks shows up the show the progress of flashing.</p>
+<blockquote>
+<div><ul>
+<li><p>During the flashing process the second line shows:</p>
+<blockquote>
+<div><p><em>SD Card Process…</em></p>
+</div></blockquote>
+</li>
+<li><p>When flashing has finished the second line shows:</p>
+<blockquote>
+<div><p>SD Card Process… END!</p>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Power off Display</p></li>
+<li><p>Remove MicroSD card</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Is crucial the MicroSD Card is formated correct:</p>
+<p>File System: <strong>FAT32</strong></p>
+<p>Allocation Unit Size: <strong>4096</strong></p>
+<p>See <a class="reference external" href="https://github.com/seho85/python-dgus/wiki/Flash-Display#prepare-microsd-card">here</a> for details.</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="display_connection.html" class="btn btn-neutral float-left" title="Display Connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="install_display_control_application.html" class="btn btn-neutral float-right" title="Install Display Control Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

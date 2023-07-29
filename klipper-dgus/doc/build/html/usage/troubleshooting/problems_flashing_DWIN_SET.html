@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problems Flashing DWIN_SET &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="LED On / Off Button not working" href="led_on_off_notworking.html" />
+    <link rel="prev" title="Troubleshooting" href="troubleshooting_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/installation_index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html">Klipper-DGUS Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DWIN_SET_config_files/DWIN_SET_config_files_index.html">DWIN_SET Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/tutorials_index.html">Tutorials</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="troubleshooting_index.html">Troubleshooting</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Problems Flashing DWIN_SET</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-contents-of-dwin-set">The Contents of DWIN_SET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-could-possibly-go-wrong">What Could Possibly Go Wrong?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-can-you-try">What Can You Try?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="led_on_off_notworking.html">LED On / Off Button not working</a></li>
+<li class="toctree-l3"><a class="reference internal" href="display_shows_empty_startup_page.html">Display show empty Startup Page</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="troubleshooting_index.html">Troubleshooting</a></li>
+      <li class="breadcrumb-item active">Problems Flashing DWIN_SET</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/troubleshooting/problems_flashing_DWIN_SET.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="problems-flashing-dwin-set">
+<span id="troubleshooting-flashing-problems-label"></span><h1>Problems Flashing DWIN_SET<a class="headerlink" href="#problems-flashing-dwin-set" title="Permalink to this heading"></a></h1>
+<p>First, let’s review the contents of the DWIN_SET folder, so that you have some idea of what it does.</p>
+<p>That should also give you some idea what the bluescreen is showing you, as you flash it.</p>
+<section id="the-contents-of-dwin-set">
+<h2>The Contents of DWIN_SET<a class="headerlink" href="#the-contents-of-dwin-set" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>The DWIN_SET folder in this distribution contains the following files:</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p>The Menu Screen Background BitMap Files</p>
+<p>All of the files whose name ends in “.bmp” are bitmap files used as the background graphics, one for each screen in the application.
+The screen bitmaps are actually flashed to the display from the 32.icl file, not from these .bmp files. The .bmps are included in DWIN_SET folder purely so that the developer can see the bitmap screen for reference, when working in the DGUSTool to place control and display overlays in the right place on each screen.</p>
+<p>It is ok, but not necessary, to delete the .bmp files from your copy of DWIN_SET.</p>
+</li>
+<li><p>The T5L display configuration file T5LCFG_272480K.configuration</p>
+<p>Flashing the T5L configuration file to the DWIN display programs the display with key behaviours.
+It is only necessary to flash this file once to the DWIN display.  You can (optionally) remove it after that, to speed up the flashing process.</p>
+<p>The CFG file can be opened, modified, and saved, using the DGUSTool tool-config CFG tool.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/tool-cfg_menu.jpg"><img alt="../../_images/tool-cfg_menu.jpg" src="../../_images/tool-cfg_menu.jpg" style="width: 343.5px; height: 117.5px;" /></a>
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../../_images/BuildT5LCFG.jpg"><img alt="../../_images/BuildT5LCFG.jpg" src="../../_images/BuildT5LCFG.jpg" style="width: 364.5px; height: 331.5px;" /></a>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You can actually “brick” your DWIN display, if you make incorrect settings in the T5L file.</p>
+</div>
+</li>
+<li><p>The DGUS application .BIN files</p>
+<p>The files 22_Config.bin, 13ShowFile.bin and 14TouchFile.bin flash the application instructions to the display.</p>
+</li>
+<li><p>The DGUS application .ICL files</p>
+<p>The files 32.icl and 40.icl flash the DGUS application graphics to the DWIN display.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The file 42.icl contains a slider knob graphic which is not used at version 0.7.0 of this application. You may (optionally) ignore or remove that file from your copy of DWIN_SET.</p>
+</div>
+<ol class="arabic" start="5">
+<li><p>The DGUS application FONT file</p>
+<p>The file 0_DWIN_ASC.HZK flashes the system font B612mono to the display. This is the same font used with the CR6Community Firmware. It is modified to replace the ` character with the degrees symbol, to label temperature values.</p>
+<p>This file only needs to be flashed to the dsiplay once.
+It is slow to load and you can deleted it from DWIN_SET, once it has been successfully flashed.
+If you previously flashed the CR6Community Firmware to your display, you should not need to flash this font file again, when flashing this klipper-dgus application.</p>
+</li>
+</ol>
+<p>See <a class="reference internal" href="../DWIN_SET_config_files/DWIN_SET_config_files_index.html#dwin-set-config-files-label"><span class="std std-ref">DWIN_SET Config Files</span></a> for more information about the above files.</p>
+</section>
+<section id="what-could-possibly-go-wrong">
+<h2>What Could Possibly Go Wrong?<a class="headerlink" href="#what-could-possibly-go-wrong" title="Permalink to this heading"></a></h2>
+<p>The DWIN display is “notoriously picky” about the partitioning and formatting of the micro SD card used to flash DWIN_SET.</p>
+<p>If the bootloader program encounters problems reading the card, it does not throw any error messages, it just “hangs.”</p>
+<p>When it hangs, you may see a blank (backlit) screen or you may see the blue screen with some or none of the expected text, but the screen may freeze before the flash process completes.</p>
+<p>If the bootloader cannot read the files on the card, you may see all “000,s” displayed as the number of files loaded.</p>
+</section>
+<section id="what-can-you-try">
+<h2>What Can You Try?<a class="headerlink" href="#what-can-you-try" title="Permalink to this heading"></a></h2>
+<p>The advice for dealing with any or all of the above symptoms is the same:</p>
+<ol class="arabic simple">
+<li><p>Make sure that the card is partitioned as MBR (Master Boot Record), DOS if using a MAC. It must NOT be partitioned as GPT.</p></li>
+<li><p>Make sure that the first Primary Partition on that card is formatted FAT32, with 4096 allocation units per sector.  (TIP: A GPT disk will show “Healthy Partition”, not “Primary Partition”)</p></li>
+<li><p>Perform a full format (not quick format) of the card, to repair or “cordon-off” any broken sectors.</p></li>
+<li><p>Put an EMPTY folder named DWIN_SET on the card</p></li>
+<li><p>With Power OFF: Put the card into the display</p></li>
+<li><p>Switch Power ON the display and verify that the blue screen shows which DGUS2 OS is loaded in the display, 000’s for each type  of file and END! at the end of the second line when the process is finished.</p></li>
+<li><p>If step 6 works, then try again to flash with just the T5LCFG file added to DWIN_SET.
+If step 6 fails, use a new SD card from a respected manufacturer</p></li>
+<li><p>If step 7 works, then try again to flash the other DWIN_SET files.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unlike the CR6Community Firmware, it should not matter which DGUS2 OS is on your display. This application is coded with DGUSTool 8.2.1.14; the same tool used to build the refactored CR6Community Firmware.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="troubleshooting_index.html" class="btn btn-neutral float-left" title="Troubleshooting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="led_on_off_notworking.html" class="btn btn-neutral float-right" title="LED On / Off Button not working" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

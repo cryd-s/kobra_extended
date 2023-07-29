@@ -1,0 +1,16 @@
+.. _32.icl:
+
+******
+32.icl
+******
+
+The file 32.icl contains all of the screen bitmap graphics.
+
+32.icl is generated using the DGUSTool tool-cfg-ICL.
+
+.. figure:: ../../img/tool-cfg_menu.jpg
+   :scale: 50 
+
+.. figure:: ../../img/Build32icl.jpg
+   :height: 400 
+   :width: 3200

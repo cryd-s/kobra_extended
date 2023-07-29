@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display Connection &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Display Flashing" href="display_flashing.html" />
+    <link rel="prev" title="Installation" href="installation_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="installation_index.html">Installation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Display Connection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#display-connector">Display Connector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#connection">Connection</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="display_flashing.html">Display Flashing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_display_control_application.html">Install Display Control Application</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../config_files/config_files_index.html">Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="installation_index.html">Installation</a></li>
+      <li class="breadcrumb-item active">Display Connection</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/installation/display_connection.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="display-connection">
+<h1>Display Connection<a class="headerlink" href="#display-connection" title="Permalink to this heading"></a></h1>
+<p>The display is connected to an <a class="reference internal" href="#connection-usb-ttl"><span class="std std-ref">USB-TTL</span></a> that is capable of putting out 5V.
+The <a class="reference internal" href="#connection-pi-gpio-header"><span class="std std-ref">RaspberryPI Serial Interface</span></a> is also usable.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It’s heavily recommended to connect, the display when the Raspberry Pi is powered off!</p>
+</div>
+<section id="display-connector">
+<h2>Display Connector<a class="headerlink" href="#display-connector" title="Permalink to this heading"></a></h2>
+<img alt="../../_images/DisplayConnector.jpg" src="../../_images/DisplayConnector.jpg" />
+</section>
+<section id="connection">
+<h2>Connection<a class="headerlink" href="#connection" title="Permalink to this heading"></a></h2>
+<section id="using-usb-ttl">
+<span id="connection-usb-ttl"></span><h3>Using USB-TTL<a class="headerlink" href="#using-usb-ttl" title="Permalink to this heading"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Display Connector</p></th>
+<th class="head"><p>USB-TTL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5V</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-odd"><td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>TX2</p></td>
+<td><p>RXD</p></td>
+</tr>
+<tr class="row-odd"><td><p>RX2</p></td>
+<td><p>TXD</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On some of the USB-TTL RXD means RXD should be connected here, and some other
+it means that this pin is RXD. If the display just shows a static mask without
+any values: RXD and TXD needs to be swapped.</p>
+</div>
+</section>
+<section id="using-pi-serial-interface">
+<span id="connection-pi-gpio-header"></span><h3>Using Pi Serial interface<a class="headerlink" href="#using-pi-serial-interface" title="Permalink to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Activate serial interface on Raspberry Pi</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">raspi</span><span class="o">-</span><span class="n">config</span>
+</pre></div>
+</div>
+<ul>
+<li><p><em>3) Interface Options</em></p></li>
+<li><p><em>6) Serial Port</em></p></li>
+<li><p>Would you like a login shell to be accessible over serial?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>No</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Would you like the serial port hardware to be enabled?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Yes</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Disconnect Raspberry Pi from Power</strong></p></li>
+<li><p>Connect Display to Raspberry PI GPIO Pin Header</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>RaspberryPI PIN</p></th>
+<th class="head"><p>Display</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5V</p></td>
+<td><p>5V</p></td>
+</tr>
+<tr class="row-odd"><td><p>GND</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-even"><td><p>Pin 8</p></td>
+<td><p>RX2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pin 10</p></td>
+<td><p>TX2</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</li>
+<li><p>Tweak <a class="reference internal" href="../config_files/serial_config_json.html#serial-config-json"><span class="std std-ref">serial_config.json</span></a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>set <em>“serial_port”: “/dev/ttyAMA0”</em></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Tweak <a class="reference internal" href="../config_files/websocket_json.html#websocket-json"><span class="std std-ref">websocket.json</span></a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>set <em>“ip”: “10.0.1.69”</em></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation_index.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="display_flashing.html" class="btn btn-neutral float-right" title="Display Flashing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

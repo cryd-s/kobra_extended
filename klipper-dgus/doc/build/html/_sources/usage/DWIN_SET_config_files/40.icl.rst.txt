@@ -1,0 +1,16 @@
+.. _40.icl:
+
+******
+40.icl
+******
+
+The file 40.icl contains all of the screen icon graphics.
+
+40.icl is generated using the DGUSTool tool-cfg-ICL.
+
+.. figure:: ../../img/tool-cfg_menu.jpg
+   :scale: 50 
+
+.. figure:: ../../img/Build40icl.jpg
+   :height: 400 
+   :width: 3200

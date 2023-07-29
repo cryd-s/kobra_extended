@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Load/Unload Filament &mdash; klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers) 0.7 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Troubleshooting" href="../troubleshooting/troubleshooting_index.html" />
+    <link rel="prev" title="Tutorials" href="tutorials_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../general_usage/general_usage_index.html">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/installation_index.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Klipper-DGUS_config_files/Klipper-DGUS_config_files_index.html">Klipper-DGUS Config Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../DWIN_SET_config_files/DWIN_SET_config_files_index.html">DWIN_SET Config Files</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tutorials_index.html">Tutorials</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Load/Unload Filament</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-you-will-learn">What you will learn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-materials-required-optional">Additional materials required (optional):</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tutorial-steps">Tutorial Steps:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/development_index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../todo.html">ToDO</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">klipper-dgus_CR6 (DGUS Display for Klipper3D on Creality CR6 Printers)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="tutorials_index.html">Tutorials</a></li>
+      <li class="breadcrumb-item active">Load/Unload Filament</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/tutorials/Load-Unload_Filament.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="load-unload-filament">
+<span id="load-unload-tutorial-label"></span><h1>Load/Unload Filament<a class="headerlink" href="#load-unload-filament" title="Permalink to this heading"></a></h1>
+<section id="what-you-will-learn">
+<h2>What you will learn<a class="headerlink" href="#what-you-will-learn" title="Permalink to this heading"></a></h2>
+<p>By following this tutorial, you will learn how to:</p>
+<ul class="simple">
+<li><p>Navigate through the menus</p></li>
+<li><p>Park the printhead at the front left corner of the printer</p></li>
+<li><p>Tap a displayed value to obtain a popup keyboard</p></li>
+<li><p>Use the popup keyboard to enter/modify/cancel or accept a target value</p></li>
+<li><p>Heat the nozzle to the desired print temperature</p></li>
+<li><p>Select the desired length of filament to load or Unload</p></li>
+<li><p>Select the rate at which the Extruder will Load or Unload the filament</p></li>
+<li><p>Load filament into the extruder and hotend</p></li>
+<li><p>Unload filament from the extruder and hotend</p></li>
+</ul>
+</section>
+<section id="additional-materials-required-optional">
+<h2>Additional materials required (optional):<a class="headerlink" href="#additional-materials-required-optional" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>one reel of filament</p></li>
+<li><p>one pair of wire snips (to cut a 45 degree tip on the end of the filament)</p></li>
+</ul>
+</section>
+<section id="tutorial-steps">
+<h2>Tutorial Steps:<a class="headerlink" href="#tutorial-steps" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Power-up the printer, with Klipper and Mainsail already loaded and running</p></li>
+<li><p>Verify that the Overview screen is shown on the DWIN display, with the bed and nozzle temperatures each displayed.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/StartAtOverviewMenu.JPG"><img alt="Example of the Overview Screen" src="../../_images/StartAtOverviewMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Before starting this tutorial, verify that the Overview Screen is displayed</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap the “&lt;” symbol at the top left corner of the menu.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/NavigateToMainMenu.JPG"><img alt="Example of the Overview Screen" src="../../_images/NavigateToMainMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Verify that the Main Menu screen is displayed.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SelectMainMenu.JPG"><img alt="Picture of the Main Menu Screen" src="../../_images/SelectMainMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Tap the “Homing” button</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/NavigateToHomingMenu.JPG"><img alt="Highlighting the &quot;Homing&quot; button on the Main Menu Screen" src="../../_images/NavigateToHomingMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Verify that the Homing menu is displayed.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SelectHomingMenu.JPG"><img alt="Picture of the Homing menu" src="../../_images/SelectHomingMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Tap the “Posn 2” button, to park the print head at Position 2, as defined in the klipper-dgus configuration file, “dgus_display_macros.cfg”</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SelectParkHead_Position2.JPG"><img alt="Picture Highlighting the &quot;Posn 2&quot; button on the Homing menu" src="../../_images/SelectParkHead_Position2.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Wait for the printer to home X,Y,Z and then to park the head at X=0,Y=0,Z=20.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The macro codes run by buttons Posn1 and Posn2 are user-programmable.</p>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>If not already installed, install the filament spool on the printer.</p></li>
+<li><p>If not already cut at 45 degrees, cut the end of the filament at a 45 degree angle.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/45DegTip.JPG"><img alt="Picture of filament with 45 degree tip cut at end" src="../../_images/45DegTip.JPG" style="width: 219.4px; height: 248.60000000000002px;" /></a>
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>Feed the filament into the extruder, and up to the point where it meets resistance (i.e. at the point where the extruder will grab the filament and feed it forward, when “Load” is selected.).</p></li>
+<li><p>Return to the Main Menu screen.</p></li>
+<li><p>Tap the “Extruder” button, to navigate to the Extruder menu.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/NavigateToExtruderMenu.JPG"><img alt="Picture Highlighting the &quot;Extruder&quot; button on the Main menu" src="../../_images/NavigateToExtruderMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="14">
+<li><p>Verify that the Extruder menu is displayed.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SelectExtruderMenu.JPG"><img alt="Picture of the Extruder menu screen" src="../../_images/SelectExtruderMenu.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="15">
+<li><p>Tap the “nozzle target temperature” field.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/TapTargetValue.JPG"><img alt="Picture highlighting the field to tap + the popup keyboard" src="../../_images/TapTargetValue.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="16">
+<li><p>Verify that a keyboard pops up.</p></li>
+<li><p>Type in an appropriate printing temperature for the filament you will load (e.g. 240, for PeTG) and tap the big green checkmark to Enter that value.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/LoadTemperatureSet.JPG"><img alt="Picture highlighting the field to tap + the popup keyboard" src="../../_images/LoadTemperatureSet.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="18">
+<li><p>Tap the 50mm Feed Amount button. Note that it is green and all of the other buttons are grey.
+(Optionally) Experiment with pushing the other Feed Amount buttons, to see what happens.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SetEExtrusionLength.JPG"><img alt="Picture highlighting the 50mm Extruder Feed Amount button" src="../../_images/SetEExtrusionLength.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="19">
+<li><p>Tap the 15mm/sec Feed Rate button.
+(Optionally) Experiment with pushing the other Feed Rate buttons, to see what happens.</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SetEExtrusionRate.JPG"><img alt="Picture highlighting the 15mm/sec Extruder Feed Rate button" src="../../_images/SetEExtrusionRate.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="20">
+<li><p>When the nozzle temperature reaches the target value, press the “Load” button.
+Note that the extruder loads 50mm of filament at the chosen Feed Rate.
+(Tip: You may have to Load 50mm several times, before you see filament come out of the nozzle.)</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/SelectLoad.JPG"><img alt="Picture highlighting the 15mm/sec Extruder Feed Rate button" src="../../_images/SelectLoad.JPG" style="width: 272.0px; height: 400.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="21">
+<li><p>Optionally, experiment with Loading filament at different Feed Rates.
+(TIP: If your extruder makes “crack” noises and visibly struggles at the highest Feed Rate, you may find this experiment reveals a better value to use in practice.)</p></li>
+<li><p>Based on what you learned following steps 1-20, now <em>Unload</em> the filament.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tutorials_index.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../troubleshooting/troubleshooting_index.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Sebastian Holzgreve (original material) and Stephen P Jones (modifications only).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
