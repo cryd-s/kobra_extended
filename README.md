@@ -18,6 +18,16 @@ Bill of Materials (BOM):
 - JST XH Connector 6 Pin (for connecting to Kobra Display)
 - Cables
 
+## connecting the Display with the raspberry pi
+You have to wire like this:
+<p align="left">
+  <img src="https://raw.githubusercontent.com/cryd-s/kobra_extended/main/20230729_092047.jpg" width="300">
+</p>
+<p align="left">
+  <img src="https://raw.githubusercontent.com/cryd-s/kobra_extended/main/20230729_092059.jpg" width="300">
+</p>
+
+
 ## Flashing the Display:
 1. Download the DWIN_SET.zip (created with the DGUS-Tool), unzip it, and copy its contents to a correctly formatted microSD card.
 
