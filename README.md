@@ -19,6 +19,14 @@ Bill of Materials (BOM):
 - Cables
 
 ## connecting the Display with the raspberry pi
+schematic:
+| RaspberryPI PIN | Display |
+|-----------------|---------|
+| 5V              | 5V      |
+| GND             | GND     |
+| Pin 8           | RX2     |
+| Pin 10          | TX2     |
+
 You have to wire like this:
 <p align="left">
   <img src="https://raw.githubusercontent.com/cryd-s/kobra_extended/main/20230729_092047.jpg" width="300">
