@@ -1,6 +1,6 @@
 # klipper-dgus_for_kobra_max
 
-Deutsche Anleitung: https://book.cryd.de/books/klipper/page/youtube-kobra-display-mit-klipper
+german manual: https://book.cryd.de/books/klipper/page/youtube-kobra-display-mit-klipper
 
 The following Kobra models have been tested:
 - Kobra Max with Trigorilla Pro A 1.0.4
