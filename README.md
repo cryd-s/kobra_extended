@@ -55,7 +55,7 @@ You have to wire like this:
 
 
 ## Flashing the Display:
-1. Download the DWIN_SET (created with the DGUS-Tool), unzip it, and copy its contents to a correctly formatted microSD card.
+1. Download the DWIN_SET (created with the Dgus-Tool) and copy to a correctly formatted microSD card.
 
 
 2. Insert the microSD card into the powered-off display.
