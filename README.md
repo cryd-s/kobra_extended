@@ -38,12 +38,12 @@ sudo raspi-config
          * Yes
 
 schematic:
-| RaspberryPI PIN | Display |
-|-----------------|---------|
-| 5V              | 5V      |
-| GND             | GND     |
-| Pin 8           | RX2     |
-| Pin 10          | TX2     |
+| RaspberryPI PIN              | Display |
+|------------------------------|---------|
+| 5V                           | 5V      |
+| GND                          | GND     |
+| Pin 8 / GPIO 14) / TXD       | RX2     |
+| Pin 10 / GPIO 15) / RXD      | TX2     |
 
 You have to wire like this:
 <p align="left">
