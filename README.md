@@ -1,6 +1,7 @@
 # klipper-dgus_for_kobra_max
 
 german manual: https://book.cryd.de/books/klipper/page/youtube-kobra-display-mit-klipper
+
 based on: https://github.com/seho85/klipper-dgus
 
 The following Kobra models have been tested:
