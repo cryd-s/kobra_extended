@@ -149,7 +149,7 @@ if __name__ == "__main__":
     fanMask = FanMask(serial_com, websock)
     display.add_mask(fanMask)
 
-    homeingInProgress = HomeingDisplayMask(51, serial_com, websock)
+    homeingInProgress = HomeingDisplayMask(10, serial_com, websock)
     display.add_mask(homeingInProgress)
 
     extruder_temp_to_low_mask = ExtruderTemperatureToLowMask(serial_com, websock)
@@ -160,7 +160,7 @@ if __name__ == "__main__":
         display.read_config_data_for_all_controls()
         #display.write_config_data_for_all_controls()
 
-        display.switch_to_mask(50)
+        display.switch_to_mask(151)
 
         #display.switch_to_mask(30)
         #display.switch_to_mask(0)
@@ -172,7 +172,7 @@ if __name__ == "__main__":
             display.switch_to_mask(0)
 
         else:# state == KlippyState.ERROR or state == KlippyState.SHUTDOWN:
-            display.switch_to_mask(50, False)
+            display.switch_to_mask(151, False)
 
     websock.register_klippy_state_event_receiver(klippy_state_changed)
 

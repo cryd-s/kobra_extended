@@ -18,9 +18,9 @@ if args.config_dir:
     config_dir = args.config_dir
 
 def determine_serial_interface():
-
     dev = "ttyS0"
     serial_device = f'/dev/{dev}'
+    print(f"Using serial interface: {serial_device}")
     return serial_device
 
 def setup_printer_ip():

@@ -18,7 +18,7 @@ class StartupMask(Mask):
     KLIPPY_STATE_TEXT_LENGTH = 110
     
     def __init__(self, com_interface: SerialCommunication, websock : WebsocketInterface) -> None:
-        super().__init__(50, com_interface)
+        super().__init__(151, com_interface)
         self.websock = websock
 
         websock.register_klippy_state_event_receiver(self.klippy_state_changed)

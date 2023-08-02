@@ -201,7 +201,7 @@ class AxesDisplayMask(Mask):
 
     def homing_request_send(self):
         self.logger.info("Homing request was send....")
-        self.display.switch_to_mask(51, False)
+        self.display.switch_to_mask(10, False)
 
 
     def home_request_finished(self, json_data):

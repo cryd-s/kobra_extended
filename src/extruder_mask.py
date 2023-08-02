@@ -1,5 +1,5 @@
 import json
-
+import logging
 from dgus.display.mask import Mask
 from dgus.display.communication.communication_interface import SerialCommunication
 from dgus.display.onscreen_keyboard import OnScreenKeyBoard
@@ -16,7 +16,7 @@ from moonraker.request_id import WebsocktRequestId
 class ExtruderMask(Mask):
 
     web_socket : WebsocketInterface = None
-
+    logger = logging.getLogger(__name__)
 
     temp_extruder = MoonrakerDataVariable
     target_temp_extruder = MoonrakerDataVariable
@@ -167,7 +167,7 @@ class ExtruderMask(Mask):
 
         extruder_temp = float(self.web_socket.get_klipper_data(["extruder", "temperature"]))
         min_extruder_temp = float(self.web_socket.get_klipper_data(["configfile", "settings", "extruder", "min_extrude_temp"]))
-
+        self.logger.info(f'Minimale Extrudertemperatur: {min_extruder_temp}')
         if extruder_temp > min_extruder_temp:
 
             gcode_cmd = f"M83\nG1 E{feed_amount_sign}{self.feed_amount_setpoint} F{self.feed_rate_setpoint*60}"
@@ -186,7 +186,7 @@ class ExtruderMask(Mask):
             self.web_socket.ws_app.send(json.dumps(extruder_rpc_request))
 
         else:
-            self.display.switch_to_mask(52, True)
+            self.display.switch_to_mask(11, True)
 
 
         

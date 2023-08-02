@@ -8,7 +8,7 @@ class ExtruderTemperatureToLowMask(Mask):
 
     
     def __init__(self, com_interface: SerialCommunication, web_socket : WebsocketInterface) -> None:
-        super().__init__(52, com_interface)
+        super().__init__(11, com_interface)
 
         min_extrude_temp = MoonrakerDataVariable(
             comInterface=com_interface,
