@@ -38,12 +38,12 @@ sudo raspi-config
          * Yes
 
 schematic:
-| RaspberryPI PIN | Display |
-|-----------------|---------|
-| 5V              | 5V      |
-| GND             | GND     |
-| Pin 8           | RX2     |
-| Pin 10          | TX2     |
+| RaspberryPI PIN              | Display |
+|------------------------------|---------|
+| 5V                           | 5V      |
+| GND                          | GND     |
+| Pin 8 / GPIO 14 / TXD        | RX2     |
+| Pin 10 / GPIO 15 / RXD       | TX2     |
 
 You have to wire like this:
 <p align="left">
@@ -55,9 +55,8 @@ You have to wire like this:
 
 
 ## Flashing the Display:
-1. Download the DWIN_SET.zip (created with the DGUS-Tool), unzip it, and copy its contents to a correctly formatted microSD card.
+1. Download the DWIN_SET (created with the Dgus-Tool) and copy to a correctly formatted microSD card.
 
-Download link: https://github.com/cryd-s/kobra_extended/blob/main/dgus-project/DWIN_SET.zip
 
 2. Insert the microSD card into the powered-off display.
 
