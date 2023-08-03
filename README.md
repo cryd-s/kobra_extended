@@ -96,7 +96,7 @@ Follow these steps to install:
 ```bash
 git clone https://github.com/cryd-s/kobra_extended.git
 mv kobra_extended klipper-dgus
-chmod -R 700 klipper-dgus
+chmod -R 755 klipper-dgus
 cd klipper-dgus
 ```
 
