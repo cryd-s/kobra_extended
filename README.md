@@ -55,7 +55,7 @@ You have to wire like this:
 
 
 ## Flashing the Display:
-1. Download the DWIN_SET (created with the Dgus-Tool) and copy to a correctly formatted microSD card.
+1. Download the ([DWIN_SET](https://github.com/cryd-s/kobra_extended/blob/main/dgus_project/DWIN_SET.zip)) unzip it and copy to a correctly formatted microSD card.
 
 
 2. Insert the microSD card into the powered-off display.
