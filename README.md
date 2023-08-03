@@ -1,7 +1,7 @@
 # klipper-dgus_for_kobra_max
 
-03.08.2023: virtual Keyboard and Speed slider fixed
-01.08.2023: initial release
+- 03.08.2023: virtual Keyboard and Speed slider fixed
+- 01.08.2023: initial release
 
 
 german manual: https://book.cryd.de/books/klipper/page/youtube-kobra-display-mit-klipper
